@@ -1,0 +1,58 @@
+.gif{
+    width: 160px;
+    height: 600px;
+    background-color: red;
+    position: relative;
+}
+.frame_one, .frame_two, .frame_three{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frame_two{
+    animation: pulse_one 5s infinite;
+    opacity: 0;
+}
+.frame_three{
+    animation: pulse_two 5s infinite;
+    opacity: 0;
+}
+
+
+
+
+
+@keyframes pulse_one {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes pulse_two {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
